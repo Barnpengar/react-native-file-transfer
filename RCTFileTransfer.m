@@ -123,7 +123,7 @@ RCT_EXPORT_METHOD(upload:(NSDictionary *)input callback:(RCTResponseSenderBlock)
   NSURL* url = [NSURL URLWithString:server];
   NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:url];
 
-  [req setHTTPMethod:@"POST"];
+  [req setHTTPMethod:@"PUT"];
 
   NSString* formBoundaryString = @"----react.file.transfer.form.boundary";
 
